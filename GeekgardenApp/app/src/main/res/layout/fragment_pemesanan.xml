@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
     tools:context=".Fragment.Pemesanan">
 
     <ImageView
@@ -22,55 +23,73 @@
         <EditText
             android:id="@+id/nama"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="40dp"
             android:hint="@string/masukan_nama"
+            android:textColor="#fff"
+            android:textAlignment="center"
             android:textSize="16sp"
+            android:background="@drawable/ovalcorner"
             android:inputType="text"/>
 
         <EditText
             android:id="@+id/email"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
             android:hint="@string/Email"
+            android:textColor="#fff"
             android:textSize="16sp"
+            android:background="@drawable/ovalcorner"
+            android:textAlignment="center"
             android:inputType="textEmailAddress"/>
 
         <EditText
             android:id="@+id/perusahaan"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/ovalcorner"
+            android:textAlignment="center"
             android:hint="@string/Nama_perusahaan"
+            android:textColor="#fff"
             android:textSize="16sp"
             android:inputType="text"/>
 
         <EditText
             android:id="@+id/budget"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/ovalcorner"
+            android:textAlignment="center"
             android:hint="@string/Budget"
+            android:textColor="#fff"
             android:textSize="16sp"
             android:inputType="text"/>
 
         <EditText
             android:id="@+id/timeline"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/ovalcorner"
+            android:textAlignment="center"
             android:hint="@string/Timeline"
+            android:textColor="#fff"
             android:textSize="16sp"
             android:inputType="text"/>
-        <com.google.android.material.textfield.TextInputLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
 
             <EditText
                 android:id="@+id/NomorHp"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/ovalcorner"
+                android:textAlignment="center"
                 android:hint="@string/masukan_nomor_hp"
+                android:textColor="#fff"
                 android:inputType="number"
                 android:textSize="16sp" />
-        </com.google.android.material.textfield.TextInputLayout>
 
         <Button
             android:id="@+id/btnOpenWhatsapp"

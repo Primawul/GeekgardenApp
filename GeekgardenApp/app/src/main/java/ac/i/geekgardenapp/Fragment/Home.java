@@ -1,16 +1,24 @@
 package ac.i.geekgardenapp.Fragment;
 
+import ac.i.geekgardenapp.Activity.Beranda;
+import ac.i.geekgardenapp.Activity.Jasa;
+import ac.i.geekgardenapp.Activity.Login;
+import ac.i.geekgardenapp.Activity.Produk;
+import ac.i.geekgardenapp.Activity.Register;
 import ac.i.geekgardenapp.Adapter.ImageSliderSatu;
 import ac.i.geekgardenapp.R;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
+import android.app.Activity;
+import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.TextView;
 
 import com.smarteist.autoimageslider.IndicatorAnimations;
 import com.smarteist.autoimageslider.SliderAnimations;
@@ -41,5 +49,21 @@ public class Home extends Fragment {
         sliderView.startAutoCycle();
 
         return view;
+
+        //tvproduk.setOnClickListener(new View.OnClickListener() {
+          //  @Override
+            //public void onClick(View view) {
+              //  Intent i = new Intent(Home.this, Produk.class);
+                //startActivity(i);
+            //}
+        //});
+        //tvjasa.setOnClickListener(new View.OnClickListener() {
+          //  @Override
+            //public void onClick(View view) {
+                //Intent i = new Intent(Home.this, Produk.class);
+                //startActivity(i);
+            //}
+        //});
     }
+
 }
