@@ -27,15 +27,14 @@ public class lainlain extends Fragment {
                              @Nullable Bundle savedInstanceState) {
       View view = inflater.inflate(R.layout.fragment_lainlain, container, false);
         CardView cvakun = (CardView) view.findViewById(R.id.akunsaya);
-        return view;
-
         cvakun.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent i = new Intent(Login,Register.class);
+                Intent i = new Intent(getActivity(),Profil.class);
                 startActivity(i);
             }
         });
+        return view;
     }
 }
 

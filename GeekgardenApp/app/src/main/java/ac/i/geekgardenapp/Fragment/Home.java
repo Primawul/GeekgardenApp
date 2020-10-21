@@ -4,11 +4,13 @@ import ac.i.geekgardenapp.Activity.Beranda;
 import ac.i.geekgardenapp.Activity.Jasa;
 import ac.i.geekgardenapp.Activity.Login;
 import ac.i.geekgardenapp.Activity.Produk;
+import ac.i.geekgardenapp.Activity.Profil;
 import ac.i.geekgardenapp.Activity.Register;
 import ac.i.geekgardenapp.Adapter.ImageSliderSatu;
 import ac.i.geekgardenapp.R;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.cardview.widget.CardView;
 import androidx.fragment.app.Fragment;
 
 import android.app.Activity;
@@ -32,6 +34,25 @@ public class Home extends Fragment {
                              @Nullable Bundle savedInstanceState ) {
         View view=  inflater.inflate(R.layout.fragment_home, container, false);
 
+        CardView cvproduk = (CardView) view.findViewById(R.id.produk);
+        cvproduk.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i = new Intent(getActivity(), Produk.class);
+                startActivity(i);
+            }
+        });
+
+        CardView cvjasa = (CardView) view.findViewById(R.id.jasa);
+        cvjasa.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i = new Intent(getActivity(), Jasa.class);
+                startActivity(i);
+            }
+        });
+
+
         SliderView sliderView = view.findViewById(R.id.imageSlider);//as recyclerview
 
         ImageSliderSatu adapter = new ImageSliderSatu(getActivity());//as adapter
@@ -49,21 +70,6 @@ public class Home extends Fragment {
         sliderView.startAutoCycle();
 
         return view;
-
-        //tvproduk.setOnClickListener(new View.OnClickListener() {
-          //  @Override
-            //public void onClick(View view) {
-              //  Intent i = new Intent(Home.this, Produk.class);
-                //startActivity(i);
-            //}
-        //});
-        //tvjasa.setOnClickListener(new View.OnClickListener() {
-          //  @Override
-            //public void onClick(View view) {
-                //Intent i = new Intent(Home.this, Produk.class);
-                //startActivity(i);
-            //}
-        //});
     }
 
 }
