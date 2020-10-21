@@ -17,8 +17,7 @@
             android:orientation="vertical">
 
             <androidx.cardview.widget.CardView
-                app:cardCornerRadius="1dp"
-                android:layout_margin="1dp"
+                app:cardCornerRadius="10dp"
                 android:layout_width="match_parent"
                 android:layout_height="400dp">
 
@@ -41,8 +40,6 @@
                     app:sliderStartAutoCycle="true" />
 
                 <ImageView
-
-                    android:layout_margin="5dp"
                     android:layout_gravity="center"
                     android:scaleType="center"
                     android:id="@+id/iv_auto_image_slider"
@@ -63,7 +60,7 @@
 
             <TextView
                 android:id="@+id/produk"
-                android:layout_width="200dp"
+                android:layout_width="170dp"
                 android:layout_height="300dp"
                 android:text="PRODUK"
                 android:textSize="30dp"
@@ -74,7 +71,7 @@
 
             <TextView
                 android:id="@+id/jasa"
-                android:layout_width="200dp"
+                android:layout_width="170dp"
                 android:layout_height="300dp"
                 android:layout_marginLeft="180dp"
                 android:text="JASA"
