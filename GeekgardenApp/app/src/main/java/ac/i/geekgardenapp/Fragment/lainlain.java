@@ -8,6 +8,7 @@ import android.view.ViewGroup;
 
 import com.smarteist.autoimageslider.SliderView;
 
+import ac.i.geekgardenapp.Activity.AboutUs;
 import ac.i.geekgardenapp.Activity.Login;
 import ac.i.geekgardenapp.Activity.Profil;
 import ac.i.geekgardenapp.Activity.Register;
@@ -27,6 +28,9 @@ public class lainlain extends Fragment {
                              @Nullable Bundle savedInstanceState) {
       View view = inflater.inflate(R.layout.fragment_lainlain, container, false);
         CardView cvakun = (CardView) view.findViewById(R.id.akunsaya);
+        CardView cvabout = (CardView) view.findViewById(R.id.tentanggeek);
+
+
         cvakun.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -34,6 +38,15 @@ public class lainlain extends Fragment {
                 startActivity(i);
             }
         });
+
+        cvabout.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i = new Intent(getActivity(), AboutUs.class);
+                startActivity(i);
+            }
+        });
+
         return view;
     }
 }

@@ -2,8 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="ac.i.geekgardenapp">
 
-    <uses-permission android:name="android.permission.INTERNET"/>
-    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
 
     <application
         android:allowBackup="true"
@@ -12,13 +12,30 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Activity.Profil"/>
+        <activity android:name=".produk.eGOV"></activity>
+        <activity android:name=".produk.ALFRED" />
+        <activity android:name=".produk.DOM" />
+        <activity android:name=".jasa.TrainingWorkshop" />
+        <activity android:name=".jasa.TecnicalSupport" />
+        <activity android:name=".jasa.softwareTesting" />
+        <activity android:name=".jasa.perancangan" />
+        <activity android:name=".jasa.ManajemenIT" />
+        <activity android:name=".jasa.konstruksiSourceCode" />
+        <activity android:name=".produk.MEDSTORE" />
+        <activity android:name=".produk.ALFERD" />
+        <activity android:name=".produk.NOMAND" />
+        <activity android:name=".produk.UDIO" />
+        <activity android:name=".produk.GEEKPOS" />
+        <activity android:name=".produk.EGOV" />
+        <activity android:name=".produk.GES" />
+        <activity android:name=".Activity.AboutUs" />
+        <activity android:name=".Activity.Profil" />
         <activity android:name=".Activity.Jasa" />
         <activity android:name=".Activity.Produk" />
         <activity android:name=".Activity.Beranda" />
-        <activity android:name=".Activity.Register"/>
+        <activity android:name=".Activity.Register" />
         <activity android:name=".Activity.Login" />
-            <activity android:name=".Splashscreen" >
+        <activity android:name=".Splashscreen">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

@@ -1,7 +1,6 @@
 package ac.i.geekgardenapp.Fragment;
 
 import ac.i.geekgardenapp.Activity.Beranda;
-import ac.i.geekgardenapp.Activity.Jasa;
 import ac.i.geekgardenapp.Activity.Login;
 import ac.i.geekgardenapp.Activity.Produk;
 import ac.i.geekgardenapp.Activity.Profil;
@@ -43,14 +42,14 @@ public class Home extends Fragment {
             }
         });
 
-        CardView cvjasa = (CardView) view.findViewById(R.id.jasa);
-        cvjasa.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent i = new Intent(getActivity(), Jasa.class);
-                startActivity(i);
-            }
-        });
+        //CardView cvjasa = (CardView) view.findViewById(R.id.jasa);
+        //cvjasa.setOnClickListener(new View.OnClickListener() {
+            //@Override
+           // public void onClick(View view) {
+             //   Intent i = new Intent(getActivity(), Jasa.class);
+               // startActivity(i);
+            //}
+        //});
 
 
         SliderView sliderView = view.findViewById(R.id.imageSlider);//as recyclerview
